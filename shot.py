@@ -12,4 +12,4 @@ class Shot(CircleShape):
         
     def update(self, dt):
         self.position += (self.velocity * dt)
-        self.rect.center = self.position
+        self.rect.center = (int(self.position.x), int(self.position.y))
